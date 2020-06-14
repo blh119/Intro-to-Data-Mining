@@ -1,5 +1,5 @@
 # Intro-to-Data-Mining
-Seven Projects from Math - 4800 course at New York City College of Technology
+Seven Projects from Math - 4800 course at New York City College of Technology. Some project are done in a R environment in a Jupyter Notebook and the others are r-script files. 
 
 Project 1 - Gives an introduction to R working with matricies. Also, calculating the average error between two functions
 
