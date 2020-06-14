@@ -12,3 +12,5 @@ Project 4 - This project invovles an analysis of the association rules for the a
 Project 5 - This is a decision tree project in which we try to fin the 3 most important factors in a car evaluation for car buying. This project includes a write up. 
 
 Project 6 - This project is actually four different project, in which part one is a normal linear regression. Part 2 is a multilinear regression with the intercept. Part 3 is a linear regression that includes sin, log, and cubic functions. Part 4 includes a linear regression with a linearized exponental function. All parts include a write up.
+
+Project 7 - Lasso Regression. This project looks at crime rates for american cities based on a number of social and economic factors. We use a lasso regression to get what factors are most important for predicting crime rate. 
