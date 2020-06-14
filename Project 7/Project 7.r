@@ -111,14 +111,11 @@ plot(x = log10(lambda_sel), y = err_train,
 
 #lets get the test error
 
-test_crime_lars <- glmnet(CrimeRate ~., data = test_crime, alpha = 1
-                           , standardize = TRUE)
-
 x_test <- subset(test_crime, select = -c(CrimeRate))
 
 lambda_sel <- 10^seq(-5,5,0.05)
 
-pred_test <- predict(test_crime_lars, newdata = x_train,
+pred_test <- predict(train_crime_lars, newdata = x_test,
                       na.action = na.pass,
                       s = lambda_sel)
 
@@ -142,14 +139,14 @@ plot(x = log10(lambda_sel), y = err_test,
 plot(x = log10(lambda_sel), y = err_train,
      xlab = 'log(lambda)',
      ylab = 'RMSE',
-     ylim = c(200, 1000),
+     ylim = c(300, 650),
      type = 'o', lty = 1, pch = 20, col = 'blue',
-     main = 'Log10(Lambda) vs Training RMSE ')
+     main = 'Log10(Lambda) vs Training and Testing RMSE ')
 
 lines(log10(lambda_sel),err_test,
       col = 'red')
 
-legend(-4,800, legend = c('Training Error', 'Testing Error'),
+legend(-4,600, legend = c('Training Error', 'Testing Error'),
        col = c('blue', 'red'), lty = 1, pch = 20)
 
 
