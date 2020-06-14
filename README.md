@@ -1,5 +1,5 @@
 # Intro-to-Data-Mining
-Six Projects from Math - 4800 course at New York City College of Technology
+Seven Projects from Math - 4800 course at New York City College of Technology
 
 Project 1 - Gives an introduction to R working with matricies. Also, calculating the average error between two functions
 
